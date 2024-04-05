@@ -1,0 +1,88 @@
+* {
+      box-sizing: border-box;
+          }
+        .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      }
+nav a{
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700; 
+}
+section{
+  min-height: 10vh;
+}
+html{
+  scroll-behavior: smooth;
+}
+h1{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+h4{
+ font-weight: 600;
+}
+p{
+  font-weight: 250;
+}
+label{ padding: 5px; font-weight: 400;}
+.year{ border-radius: 50px; color: white; background-color: purple; width:60px; font-weight: bold;}
+#cont{ padding: 25px; font-weight: 200;}
+#port{
+  padding-left: 18px;
+}
+img{
+  width: 220px;
+  height: 220px;
+}
+#recent{
+  border: 1px solid gray;
+  width: auto;
+  height: 170px;
+  background-color: white;
+   box-shadow: 10px 10px 5px black;
+   
+}
+#recent p{
+  padding: 6px;
+  font-weight: 500;
+
+}
+#blog{
+  
+  background-color: azure;
+  border: 0px solid black;
+  
+  
+}
+h5{ padding-left: 5px;}
+#pics{ border-radius: 20px; }
+  
+   @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+        }
+        #blog{ padding: 0px;  }
+        #recent{ height: auto;}
+       
+      }
+      @media only screen and (min-width: 600px) {
+        #blog{ padding: 0px;  }
+        #recent{ height: auto;}
+        
+      }
+      #feature{
+       
+      }
+      #footer h1 a{ color: black;}
+      @media print{
+        body *:not(#home):not(#home *){
+          visibility: hidden;
+        }
+        #home{
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
